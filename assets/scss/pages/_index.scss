@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    .container{
+        width: 80%;
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            width: 20%;
+            h1{
+                font-family: 'Anton', sans-serif;
+                color:rgb(253, 95, 0);
+                font-size: 32px;
+                font-weight: 900;
+                letter-spacing: 2;
+            }
+        }
+        nav{
+            width: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: black;
+                        transition: 0.5s;
+                        &:hover{
+                            cursor: pointer;
+                            color: rgb(253, 95, 0);
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+        .menu{
+            display: none;
+        }
+    }
+}
+
+#bgImg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+#feedBack{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .firstCard{
+            width: 33,33%;
+            background-color: rgb(78, 78, 78);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .cardText{
+                border: 2px solid rgb(147, 147, 147);
+                width: 88%;
+                padding: 30px;
+                margin: 30px 0;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                h2{
+                    font-family: 'Anton';
+                    color: white;
+                    font-size: 36px;
+                    font-weight: 400;
+                }
+                p{
+                    color: rgb(147, 147, 147);
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+        .secondCard{
+            background-color: rgb(253, 95, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 33,33%;
+            .cardText{
+                border: 2px solid rgb(254, 147, 83);
+                width: 88%;
+                padding: 30px;
+                margin: 30px 0;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                h2{
+                    font-family: 'Anton';
+                    color: white;
+                    font-size: 36px;
+                    font-weight: 400;
+                }
+                p{
+                    color: rgb(254, 147, 83);
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+        .thirtyCard{
+            background-color: rgb(162, 49, 49);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 33,33%;
+            .cardText{
+                width: 88%;
+                padding: 30px;
+                margin: 30px 0;
+                border: 2px solid #CC8D8D;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                h2{
+                    font-family: 'Anton';
+                    color: white;
+                    font-size: 36px;
+                    font-weight: 400;
+                }
+                p{
+                    color: #CC8D8D;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 576px) {
+    header{
+        width: 100%;
+        .container{
+            width: 95%;
+            display: flex;
+            justify-content: space-between;
+            .logo{
+                width: 50%;
+                h1{
+                    font-size: 26px;
+                    letter-spacing: 2;
+                }
+            }
+            nav{
+                display: none;
+            }
+            .menu{
+                width: 10%;
+                display: block;
+                i{
+                    width: 100%;
+                    color: black;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    #bgImg{
+        width: 100%;
+        .container{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    #feedBack{
+        width: 100%;
+        .container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .firstCard{
+                width: 100%;
+                .cardText{
+                    h2{
+                        font-size: 24px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .secondCard{
+                width: 100%;
+                .cardText{
+                    h2{
+                        font-size: 24px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .thirtyCard{
+                width: 100%;
+                .cardText{
+                    h2{
+                        font-size: 24px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    header{
+        width: 100%;
+        .container{
+            width: 95%;
+            display: flex;
+            justify-content: space-between;
+            .logo{
+                width: 50%;
+                h1{
+                    font-size: 30px;
+                    letter-spacing: 3;
+                }
+            }
+            nav{
+                display: none;
+            }
+            .menu{
+                width: 10%;
+                display: block;
+                i{
+                    width: 100%;
+                    color: black;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    #bgImg{
+        width: 100%;
+        .container{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    #feedBack{
+        width: 100%;
+        .container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .firstCard{
+                width: 100%;
+                .cardText{
+                    h2{
+                        font-size: 30px;
+                        letter-spacing: 2;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .secondCard{
+                width: 100%;
+                .cardText{
+                    h2{
+                        font-size: 30px;
+                        letter-spacing: 2;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .thirtyCard{
+                width: 100%;
+                .cardText{
+                    h2{
+                        font-size: 30px;
+                        letter-spacing: 2;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    header{
+        width: 100%;
+        .container{
+            width: 95%;
+            display: flex;
+            justify-content: space-between;
+            .logo{
+                width: 50%;
+                h1{
+                    font-size: 30px;
+                    letter-spacing: 3;
+                }
+            }
+            nav{
+                display: none;
+            }
+            .menu{
+                width: 10%;
+                display: block;
+                i{
+                    width: 100%;
+                    color: black;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    #bgImg{
+        width: 100%;
+        .container{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    #feedBack{
+        width: 100%;
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .firstCard{
+                width: 33.33%;
+                .cardText{
+                    h2{
+                        font-size: 32px;
+                        letter-spacing: 2;
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+            .secondCard{
+                width: 33.33%;
+                .cardText{
+                    h2{
+                        font-size: 32px;
+                        letter-spacing: 2;
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+            .thirtyCard{
+                width: 33.33%;
+                .cardText{
+                    h2{
+                        font-size: 32px;
+                        letter-spacing: 2;
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    header{
+        width: 100%;
+        .container{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            .logo{
+                width: 50%;
+                h1{
+                    font-size: 32px;
+                    letter-spacing: 3;
+                }
+            }
+            nav{
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                ul{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    li{
+                        list-style: none;
+                        a{
+                            text-decoration: none;
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: black;
+                        }
+                    }
+                }
+            }
+            .menu{
+                display: none;
+            }
+        }
+    }
+    #bgImg{
+        width: 100%;
+        .container{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    #feedBack{
+        width: 100%;
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .firstCard{
+                width: 33.33%;
+                .cardText{
+                    h2{
+                        font-size: 32px;
+                        letter-spacing: 2;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+            .secondCard{
+                width: 33.33%;
+                .cardText{
+                    h2{
+                        font-size: 32px;
+                        letter-spacing: 2;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+            .thirtyCard{
+                width: 33.33%;
+                .cardText{
+                    h2{
+                        font-size: 32px;
+                        letter-spacing: 2;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,491 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito";
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+header .container {
+  width: 80%;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .logo {
+  width: 20%;
+}
+header .container .logo h1 {
+  font-family: "Anton", sans-serif;
+  color: rgb(253, 95, 0);
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 2;
+}
+header .container nav {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .container nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container nav ul li {
+  list-style: none;
+}
+header .container nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  transition: 0.5s;
+}
+header .container nav ul li a:hover {
+  cursor: pointer;
+  color: rgb(253, 95, 0);
+  transition: 0.5s;
+}
+header .container .menu {
+  display: none;
+}
+
+#bgImg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bgImg .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bgImg .container img {
+  width: 100%;
+}
+
+#feedBack {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#feedBack .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#feedBack .container .firstCard {
+  width: 33, 33%;
+  background-color: rgb(78, 78, 78);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#feedBack .container .firstCard .cardText {
+  border: 2px solid rgb(147, 147, 147);
+  width: 88%;
+  padding: 30px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#feedBack .container .firstCard .cardText h2 {
+  font-family: "Anton";
+  color: white;
+  font-size: 36px;
+  font-weight: 400;
+}
+#feedBack .container .firstCard .cardText p {
+  color: rgb(147, 147, 147);
+  font-size: 16px;
+  font-weight: 400;
+}
+#feedBack .container .secondCard {
+  background-color: rgb(253, 95, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33, 33%;
+}
+#feedBack .container .secondCard .cardText {
+  border: 2px solid rgb(254, 147, 83);
+  width: 88%;
+  padding: 30px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#feedBack .container .secondCard .cardText h2 {
+  font-family: "Anton";
+  color: white;
+  font-size: 36px;
+  font-weight: 400;
+}
+#feedBack .container .secondCard .cardText p {
+  color: rgb(254, 147, 83);
+  font-size: 16px;
+  font-weight: 400;
+}
+#feedBack .container .thirtyCard {
+  background-color: rgb(162, 49, 49);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33, 33%;
+}
+#feedBack .container .thirtyCard .cardText {
+  width: 88%;
+  padding: 30px;
+  margin: 30px 0;
+  border: 2px solid #CC8D8D;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#feedBack .container .thirtyCard .cardText h2 {
+  font-family: "Anton";
+  color: white;
+  font-size: 36px;
+  font-weight: 400;
+}
+#feedBack .container .thirtyCard .cardText p {
+  color: #CC8D8D;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  header {
+    width: 100%;
+  }
+  header .container {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+  }
+  header .container .logo {
+    width: 50%;
+  }
+  header .container .logo h1 {
+    font-size: 26px;
+    letter-spacing: 2;
+  }
+  header .container nav {
+    display: none;
+  }
+  header .container .menu {
+    width: 10%;
+    display: block;
+  }
+  header .container .menu i {
+    width: 100%;
+    color: black;
+    font-size: 20px;
+  }
+  #bgImg {
+    width: 100%;
+  }
+  #bgImg .container {
+    width: 100%;
+  }
+  #bgImg .container img {
+    width: 100%;
+  }
+  #feedBack {
+    width: 100%;
+  }
+  #feedBack .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #feedBack .container .firstCard {
+    width: 100%;
+  }
+  #feedBack .container .firstCard .cardText h2 {
+    font-size: 24px;
+  }
+  #feedBack .container .firstCard .cardText p {
+    font-size: 14px;
+  }
+  #feedBack .container .secondCard {
+    width: 100%;
+  }
+  #feedBack .container .secondCard .cardText h2 {
+    font-size: 24px;
+  }
+  #feedBack .container .secondCard .cardText p {
+    font-size: 14px;
+  }
+  #feedBack .container .thirtyCard {
+    width: 100%;
+  }
+  #feedBack .container .thirtyCard .cardText h2 {
+    font-size: 24px;
+  }
+  #feedBack .container .thirtyCard .cardText p {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+  header .container {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+  }
+  header .container .logo {
+    width: 50%;
+  }
+  header .container .logo h1 {
+    font-size: 30px;
+    letter-spacing: 3;
+  }
+  header .container nav {
+    display: none;
+  }
+  header .container .menu {
+    width: 10%;
+    display: block;
+  }
+  header .container .menu i {
+    width: 100%;
+    color: black;
+    font-size: 22px;
+  }
+  #bgImg {
+    width: 100%;
+  }
+  #bgImg .container {
+    width: 100%;
+  }
+  #bgImg .container img {
+    width: 100%;
+  }
+  #feedBack {
+    width: 100%;
+  }
+  #feedBack .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #feedBack .container .firstCard {
+    width: 100%;
+  }
+  #feedBack .container .firstCard .cardText h2 {
+    font-size: 30px;
+    letter-spacing: 2;
+  }
+  #feedBack .container .firstCard .cardText p {
+    font-size: 16px;
+  }
+  #feedBack .container .secondCard {
+    width: 100%;
+  }
+  #feedBack .container .secondCard .cardText h2 {
+    font-size: 30px;
+    letter-spacing: 2;
+  }
+  #feedBack .container .secondCard .cardText p {
+    font-size: 16px;
+  }
+  #feedBack .container .thirtyCard {
+    width: 100%;
+  }
+  #feedBack .container .thirtyCard .cardText h2 {
+    font-size: 30px;
+    letter-spacing: 2;
+  }
+  #feedBack .container .thirtyCard .cardText p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  header {
+    width: 100%;
+  }
+  header .container {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+  }
+  header .container .logo {
+    width: 50%;
+  }
+  header .container .logo h1 {
+    font-size: 30px;
+    letter-spacing: 3;
+  }
+  header .container nav {
+    display: none;
+  }
+  header .container .menu {
+    width: 10%;
+    display: block;
+  }
+  header .container .menu i {
+    width: 100%;
+    color: black;
+    font-size: 22px;
+  }
+  #bgImg {
+    width: 100%;
+  }
+  #bgImg .container {
+    width: 100%;
+  }
+  #bgImg .container img {
+    width: 100%;
+  }
+  #feedBack {
+    width: 100%;
+  }
+  #feedBack .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #feedBack .container .firstCard {
+    width: 33.33%;
+  }
+  #feedBack .container .firstCard .cardText h2 {
+    font-size: 32px;
+    letter-spacing: 2;
+  }
+  #feedBack .container .firstCard .cardText p {
+    font-size: 18px;
+  }
+  #feedBack .container .secondCard {
+    width: 33.33%;
+  }
+  #feedBack .container .secondCard .cardText h2 {
+    font-size: 32px;
+    letter-spacing: 2;
+  }
+  #feedBack .container .secondCard .cardText p {
+    font-size: 18px;
+  }
+  #feedBack .container .thirtyCard {
+    width: 33.33%;
+  }
+  #feedBack .container .thirtyCard .cardText h2 {
+    font-size: 32px;
+    letter-spacing: 2;
+  }
+  #feedBack .container .thirtyCard .cardText p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  header {
+    width: 100%;
+  }
+  header .container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  header .container .logo {
+    width: 50%;
+  }
+  header .container .logo h1 {
+    font-size: 32px;
+    letter-spacing: 3;
+  }
+  header .container nav {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .container nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .container nav ul li {
+    list-style: none;
+  }
+  header .container nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+  }
+  header .container .menu {
+    display: none;
+  }
+  #bgImg {
+    width: 100%;
+  }
+  #bgImg .container {
+    width: 100%;
+  }
+  #bgImg .container img {
+    width: 100%;
+  }
+  #feedBack {
+    width: 100%;
+  }
+  #feedBack .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #feedBack .container .firstCard {
+    width: 33.33%;
+  }
+  #feedBack .container .firstCard .cardText h2 {
+    font-size: 32px;
+    letter-spacing: 2;
+  }
+  #feedBack .container .firstCard .cardText p {
+    font-size: 20px;
+  }
+  #feedBack .container .secondCard {
+    width: 33.33%;
+  }
+  #feedBack .container .secondCard .cardText h2 {
+    font-size: 32px;
+    letter-spacing: 2;
+  }
+  #feedBack .container .secondCard .cardText p {
+    font-size: 20px;
+  }
+  #feedBack .container .thirtyCard {
+    width: 33.33%;
+  }
+  #feedBack .container .thirtyCard .cardText h2 {
+    font-size: 32px;
+    letter-spacing: 2;
+  }
+  #feedBack .container .thirtyCard .cardText p {
+    font-size: 20px;
+  }
+}
