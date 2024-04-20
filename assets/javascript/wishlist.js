@@ -1,9 +1,9 @@
-const div = document.querySelector ('.contentsCards')
+const div = document.querySelector('.contentsCards')
 
-function getBasketData() {
-    div.innerHTML = ``
-    let cart = JSON.parse(localStorage.getItem('cart')) || []
-    cart.forEach((item, index) => {
+function getWishlistData() {
+    div.innerHTML =  ``
+    let wishlist = JSON.parse(localStorage.getItem('wishlist')) || []
+    wishlist.forEach((item, index) => {
         let box = document.createElement('div')
             box.className = 'contentsCard'
             box.innerHTML = `
@@ -15,8 +15,8 @@ function getBasketData() {
                 <p>${item.brand}</p>
                 <span>- $ ${item.price} -</span>
                 <div class="btnBox">
-                    <button onclick="getDeleteItem(${index})">Delete</button> 
-                    <button><i class="fa-solid fa-heart"></i></button>
+                    <button onclick="addToBasket(${item.id})">Add To Cart</button> 
+                    <button  onclick="getDeleteWishlist(${index})"><i class="fa-solid fa-heart-circle-minus"></i></button>
                 </div>
             </div>
             `
@@ -24,15 +24,14 @@ function getBasketData() {
     })
 }
 
-function getDeleteItem(index) {
-    let cart = JSON.parse(localStorage.getItem('cart')) || []
-    cart.splice (index, 1)
-    localStorage.setItem('cart', JSON.stringify(cart))
-    getBasketData()
+function getDeleteWishlist(index) {
+    let wishlist = JSON.parse(localStorage.getItem('wishlist')) || []
+    wishlist.splice (index, 1)
+    localStorage.setItem('wishlist', JSON.stringify(wishlist))
+    getWishlistData()
 }
 
-
-getBasketData()
+getWishlistData()
 
 document.addEventListener("DOMContentLoaded", function() {
     const menuButton = document.querySelector('.menu');

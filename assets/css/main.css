@@ -59,6 +59,69 @@ header .container nav ul li a:hover {
 header .container .menu {
   display: none;
 }
+header .container .offScreenMenu {
+  width: 100%;
+  background-color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  max-width: 600px;
+  position: fixed;
+  top: 79px;
+  left: 0;
+  transition: 0.3s ease;
+}
+header .container .offScreenMenu ul {
+  width: 90%;
+  border: 2px solid rgb(253, 95, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 20px 10px;
+}
+header .container .offScreenMenu ul li {
+  list-style: none;
+}
+header .container .offScreenMenu ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(78, 78, 78);
+  transition: 0.5s;
+}
+header .container .offScreenMenu ul li a:hover {
+  color: rgb(253, 95, 0);
+  transition: 0.5s;
+}
+header .container .basket {
+  width: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header .container .basket a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+header .container .basket a i {
+  font-size: 20px;
+  color: rgb(60, 60, 60);
+}
+header .container .basket a:hover {
+  color: rgb(253, 95, 0);
+  transition: 0.5s;
+}
+header .container .basket .number {
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  top: -15px;
+  left: 60px;
+}
 
 #bgImg {
   width: 100%;
@@ -170,6 +233,495 @@ header .container .menu {
   font-weight: 400;
 }
 
+#contentBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+#contentBox .container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+#contentBox .container .contentsCards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+#contentBox .container .contentsCards .contentsCard {
+  background-color: rgba(85, 107, 47, 0.099);
+  border: 3px solid rgb(254, 147, 83);
+  border-radius: 5px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 5px;
+}
+#contentBox .container .contentsCards .contentsCard .cardImg {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contentBox .container .contentsCards .contentsCard .cardImg img {
+  width: 90%;
+  height: 250px;
+  border-radius: 3px;
+}
+#contentBox .container .contentsCards .contentsCard .cardText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  gap: 10px;
+}
+#contentBox .container .contentsCards .contentsCard .cardText h3 {
+  font-family: "Anton";
+  color: rgb(253, 95, 0);
+  font-size: 24px;
+  font-weight: 500;
+}
+#contentBox .container .contentsCards .contentsCard .cardText p {
+  color: rgb(147, 147, 147);
+  font-size: 18px;
+  font-weight: 400;
+}
+#contentBox .container .contentsCards .contentsCard .cardText span {
+  color: rgb(255, 98, 0);
+  font-size: 22px;
+  font-weight: 700;
+}
+#contentBox .container .contentsCards .contentsCard .cardText .btnBox {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#contentBox .container .contentsCards .contentsCard .cardText .btnBox button {
+  background-color: transparent;
+  border: 2px solid rgb(254, 147, 83);
+  border-radius: 3px;
+  color: rgb(253, 95, 0);
+  font-size: 18px;
+  font-weight: 400;
+  padding: 5px 10px;
+  transition: 1s;
+}
+#contentBox .container .contentsCards .contentsCard .cardText .btnBox button:hover {
+  transition: 1s;
+  cursor: pointer;
+  background-color: rgba(253, 97, 0, 0.162);
+}
+
+#ourLeadership {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+#ourLeadership .container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+#ourLeadership .container .ourLeadershipText {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 0;
+}
+#ourLeadership .container .ourLeadershipText h2 {
+  font-family: "Anton";
+  font-size: 64px;
+  font-weight: 400;
+  color: black;
+}
+#ourLeadership .container .ourLeadershipText p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(147, 147, 147);
+}
+#ourLeadership .container .ourLeaderShipCards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+}
+#ourLeadership .container .ourLeaderShipCards .ourLeaderShipCard {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  gap: 40px;
+  border: 1px solid rgba(147, 147, 147, 0.411);
+  border-radius: 5px;
+}
+#ourLeadership .container .ourLeaderShipCards .ourLeaderShipCard .cardImg {
+  width: 40%;
+}
+#ourLeadership .container .ourLeaderShipCards .ourLeaderShipCard .cardImg img {
+  width: 100%;
+  border-radius: 50%;
+}
+#ourLeadership .container .ourLeaderShipCards .ourLeaderShipCard .cardText {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+#ourLeadership .container .ourLeaderShipCards .ourLeaderShipCard .cardText span {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(184, 184, 184);
+}
+#ourLeadership .container .ourLeaderShipCards .ourLeaderShipCard .cardText p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(147, 147, 147);
+}
+#ourLeadership .container .ourLeaderShipCards .ourLeaderShipCard .cardText .iconBox {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+#ourLeadership .container .ourLeaderShipCards .ourLeaderShipCard .cardText .iconBox i {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  border: 2px solid rgb(253, 95, 0);
+  width: 30%;
+  padding: 10px 15px;
+  color: white;
+  background-color: rgb(253, 95, 0);
+  transition: 0.3s;
+}
+#ourLeadership .container .ourLeaderShipCards .ourLeaderShipCard .cardText .iconBox i:hover {
+  transition: 0.3s;
+  border: 2px solid rgb(253, 95, 0);
+  color: rgb(253, 95, 0);
+  background-color: white;
+}
+
+#ourBlog {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+#ourBlog .container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+#ourBlog .container .ourBlogText {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 0;
+}
+#ourBlog .container .ourBlogText h2 {
+  font-family: "Anton";
+  font-size: 64px;
+  font-weight: 400;
+  color: black;
+}
+#ourBlog .container .ourBlogText p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(147, 147, 147);
+}
+#ourBlog .container .ourBlogCards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px;
+}
+#ourBlog .container .ourBlogCards .ourBlogCard {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#ourBlog .container .ourBlogCards .ourBlogCard .cardImg {
+  width: 100%;
+}
+#ourBlog .container .ourBlogCards .ourBlogCard .cardImg img {
+  width: 100%;
+}
+#ourBlog .container .ourBlogCards .ourBlogCard .cardText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+#ourBlog .container .ourBlogCards .ourBlogCard .cardText h3 {
+  font-family: "Anton";
+  font-size: 32px;
+  font-weight: 600;
+  color: rgb(253, 95, 0);
+  transition: 1s;
+}
+#ourBlog .container .ourBlogCards .ourBlogCard .cardText h3:hover {
+  color: rgb(177, 66, 0);
+  cursor: pointer;
+  transition: 1s;
+}
+#ourBlog .container .ourBlogCards .ourBlogCard .cardText h6 {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(108, 117, 125);
+}
+#ourBlog .container .ourBlogCards .ourBlogCard .cardText h6 span {
+  color: rgb(253, 95, 0);
+  transition: 1s;
+}
+#ourBlog .container .ourBlogCards .ourBlogCard .cardText h6 span:hover {
+  transition: 1s;
+  cursor: pointer;
+  color: rgb(177, 66, 0);
+}
+#ourBlog .container .ourBlogCards .ourBlogCard .cardText p {
+  color: rgb(147, 147, 147);
+  font-size: 16px;
+  font-weight: 400;
+}
+#ourBlog .container .ourBlogCards .ourBlogCard .cardText a {
+  text-decoration: none;
+  color: rgb(253, 95, 0);
+  font-size: 16px;
+  font-weight: 400;
+  transition: 1s;
+}
+#ourBlog .container .ourBlogCards .ourBlogCard .cardText a:hover {
+  transition: 1s;
+  color: rgb(177, 66, 0);
+}
+
+footer {
+  background-color: rgb(51, 51, 51);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+}
+footer .container .footerTop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 40px 0;
+}
+footer .container .footerTop .aboutUs {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+}
+footer .container .footerTop .aboutUs h4 {
+  font-family: "Anton";
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+footer .container .footerTop .aboutUs p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(115, 115, 115);
+}
+footer .container .footerTop .feature {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+}
+footer .container .footerTop .feature h4 {
+  font-family: "Anton";
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+footer .container .footerTop .feature ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+footer .container .footerTop .feature ul li {
+  list-style: none;
+  font-weight: 400;
+  color: rgb(147, 147, 147);
+  transition: 1s;
+}
+footer .container .footerTop .feature ul li:hover {
+  cursor: pointer;
+  color: white;
+  transition: 1s;
+}
+footer .container .footerTop .paragraph {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+}
+footer .container .footerTop .paragraph .someParagraph {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+}
+footer .container .footerTop .paragraph .someParagraph h4 {
+  font-family: "Anton";
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+footer .container .footerTop .paragraph .someParagraph p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(115, 115, 115);
+}
+footer .container .footerTop .paragraph .subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+footer .container .footerTop .paragraph .subscribe h4 {
+  font-family: "Anton";
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+footer .container .footerTop .paragraph .subscribe form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container .footerTop .paragraph .subscribe form input {
+  width: 60%;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+footer .container .footerTop .paragraph .subscribe form button {
+  width: 40%;
+  padding: 10px 15px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: rgb(253, 95, 0);
+  color: white;
+  transition: 1s;
+}
+footer .container .footerTop .paragraph .subscribe form button:hover {
+  cursor: pointer;
+  background-color: rgb(177, 66, 0);
+  transition: 1s;
+}
+footer .container .footerTop .paragraph .iconBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+footer .container .footerTop .paragraph .iconBox h4 {
+  font-family: "Anton";
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+footer .container .footerTop .paragraph .iconBox .icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+footer .container .footerTop .paragraph .iconBox .icons i {
+  font-size: 16px;
+  color: rgb(147, 147, 147);
+  transition: 1s;
+}
+footer .container .footerTop .paragraph .iconBox .icons i:hover {
+  cursor: pointer;
+  transition: 1s;
+  color: white;
+}
+footer .container .footerBottom {
+  width: 100%;
+  margin: 40px 0;
+  border-top: 1px solid rgba(147, 147, 147, 0.407);
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container .footerBottom p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(115, 115, 115);
+}
+
 @media screen and (min-width: 300px) and (max-width: 576px) {
   header {
     width: 100%;
@@ -197,6 +749,32 @@ header .container .menu {
     width: 100%;
     color: black;
     font-size: 20px;
+  }
+  header .container .basket {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  header .container .basket a {
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  header .container .basket a i {
+    font-size: 22px;
+    color: rgb(60, 60, 60);
+  }
+  header .container .basket a:hover {
+    color: rgb(253, 95, 0);
+    transition: 0.5s;
+  }
+  header .container .basket .number {
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    top: -15px;
+    left: 65px;
   }
   #bgImg {
     width: 100%;
@@ -243,6 +821,107 @@ header .container .menu {
   }
   #feedBack .container .thirtyCard .cardText p {
     font-size: 14px;
+  }
+  #contentBox {
+    width: 100%;
+  }
+  #contentBox .container {
+    width: 90%;
+  }
+  #contentBox .container .contentsCards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  #contentBox .container .contentsCards .contentsCard {
+    width: 90%;
+  }
+  #ourLeadership {
+    width: 100%;
+  }
+  #ourLeadership .container {
+    width: 90%;
+  }
+  #ourLeadership .container .ourLeadershipText {
+    width: 100%;
+  }
+  #ourLeadership .container .ourLeadershipText h2 {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  #ourLeadership .container .ourLeaderShipCards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    gap: 20px;
+  }
+  #ourLeadership .container .ourLeaderShipCards .ourLeaderShipCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #ourBlog {
+    width: 100%;
+  }
+  #ourBlog .container {
+    width: 90%;
+  }
+  #ourBlog .container .ourBlogText {
+    width: 70%;
+  }
+  #ourBlog .container .ourBlogText h2 {
+    font-size: 32px;
+  }
+  #ourBlog .container .ourBlogCards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  #ourBlog .container .ourBlogCards .ourBlogCard {
+    width: 100%;
+  }
+  #ourBlog .container .ourBlogCards .ourBlogCard .cardImg {
+    width: 100%;
+  }
+  #ourBlog .container .ourBlogCards .ourBlogCard .cardImg img {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+  footer .container {
+    width: 90%;
+  }
+  footer .container .footerTop {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  footer .container .footerTop .aboutUs {
+    width: 100%;
+  }
+  footer .container .footerTop .feature {
+    width: 90%;
+  }
+  footer .container .footerTop .paragraph {
+    width: 90%;
+  }
+  footer .container .footerBottom {
+    width: 100%;
+    text-align: center;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -273,6 +952,32 @@ header .container .menu {
     color: black;
     font-size: 22px;
   }
+  header .container .basket {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  header .container .basket a {
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  header .container .basket a i {
+    font-size: 22px;
+    color: rgb(60, 60, 60);
+  }
+  header .container .basket a:hover {
+    color: rgb(253, 95, 0);
+    transition: 0.5s;
+  }
+  header .container .basket .number {
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    top: -15px;
+    left: 65px;
+  }
   #bgImg {
     width: 100%;
   }
@@ -322,6 +1027,107 @@ header .container .menu {
   #feedBack .container .thirtyCard .cardText p {
     font-size: 16px;
   }
+  #contentBox {
+    width: 100%;
+  }
+  #contentBox .container {
+    width: 90%;
+  }
+  #contentBox .container .contentsCards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  #contentBox .container .contentsCards .contentsCard {
+    width: 48%;
+  }
+  #ourLeadership {
+    width: 100%;
+  }
+  #ourLeadership .container {
+    width: 90%;
+  }
+  #ourLeadership .container .ourLeadershipText {
+    width: 100%;
+  }
+  #ourLeadership .container .ourLeadershipText h2 {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  #ourLeadership .container .ourLeaderShipCards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    gap: 20px;
+  }
+  #ourLeadership .container .ourLeaderShipCards .ourLeaderShipCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #ourBlog {
+    width: 100%;
+  }
+  #ourBlog .container {
+    width: 90%;
+  }
+  #ourBlog .container .ourBlogText {
+    width: 70%;
+  }
+  #ourBlog .container .ourBlogText h2 {
+    font-size: 32px;
+  }
+  #ourBlog .container .ourBlogCards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  #ourBlog .container .ourBlogCards .ourBlogCard {
+    width: 100%;
+  }
+  #ourBlog .container .ourBlogCards .ourBlogCard .cardImg {
+    width: 100%;
+  }
+  #ourBlog .container .ourBlogCards .ourBlogCard .cardImg img {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+  footer .container {
+    width: 90%;
+  }
+  footer .container .footerTop {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  footer .container .footerTop .aboutUs {
+    width: 80%;
+  }
+  footer .container .footerTop .feature {
+    width: 80%;
+  }
+  footer .container .footerTop .paragraph {
+    width: 80%;
+  }
+  footer .container .footerBottom {
+    width: 100%;
+    text-align: center;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
   header {
@@ -350,6 +1156,32 @@ header .container .menu {
     width: 100%;
     color: black;
     font-size: 22px;
+  }
+  header .container .basket {
+    width: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  header .container .basket a {
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  header .container .basket a i {
+    font-size: 22px;
+    color: rgb(60, 60, 60);
+  }
+  header .container .basket a:hover {
+    color: rgb(253, 95, 0);
+    transition: 0.5s;
+  }
+  header .container .basket .number {
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    top: -15px;
+    left: 65px;
   }
   #bgImg {
     width: 100%;
@@ -399,6 +1231,87 @@ header .container .menu {
   #feedBack .container .thirtyCard .cardText p {
     font-size: 18px;
   }
+  #contentBox {
+    width: 100%;
+  }
+  #contentBox .container {
+    width: 90%;
+  }
+  #contentBox .container .contentsCards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  #contentBox .container .contentsCards .contentsCard {
+    width: 45%;
+  }
+  #ourLeadership {
+    width: 100%;
+  }
+  #ourLeadership .container {
+    width: 90%;
+  }
+  #ourLeadership .container .ourLeadershipText {
+    width: 55%;
+  }
+  #ourLeadership .container .ourLeadershipText h2 {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  #ourLeadership .container .ourLeaderShipCards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+    gap: 20px;
+  }
+  #ourLeadership .container .ourLeaderShipCards .ourLeaderShipCard {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #ourLeadership .container .ourLeaderShipCards .ourLeaderShipCard .cardText {
+    width: 80%;
+  }
+  #ourLeadership .container .ourLeaderShipCards .ourLeaderShipCard .cardText p {
+    font-size: 16px;
+  }
+  #ourBlog {
+    width: 100%;
+  }
+  #ourBlog .container {
+    width: 90%;
+  }
+  #ourBlog .container .ourBlogText {
+    width: 70%;
+  }
+  #ourBlog .container .ourBlogText h2 {
+    font-size: 40px;
+  }
+  #ourBlog .container .ourBlogCards {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  #ourBlog .container .ourBlogCards .ourBlogCard {
+    width: 100%;
+  }
+  #ourBlog .container .ourBlogCards .ourBlogCard .cardImg {
+    width: 100%;
+  }
+  #ourBlog .container .ourBlogCards .ourBlogCard .cardImg img {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   header {
@@ -407,7 +1320,7 @@ header .container .menu {
   header .container {
     width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   header .container .logo {
     width: 50%;
@@ -440,6 +1353,32 @@ header .container .menu {
   header .container .menu {
     display: none;
   }
+  header .container .basket {
+    width: 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  header .container .basket a {
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  header .container .basket a i {
+    font-size: 22px;
+    color: rgb(60, 60, 60);
+  }
+  header .container .basket a:hover {
+    color: rgb(253, 95, 0);
+    transition: 0.5s;
+  }
+  header .container .basket .number {
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    top: -15px;
+    left: 65px;
+  }
   #bgImg {
     width: 100%;
   }
@@ -488,4 +1427,351 @@ header .container .menu {
   #feedBack .container .thirtyCard .cardText p {
     font-size: 20px;
   }
+  #contentBox {
+    width: 100%;
+  }
+  #contentBox .container {
+    width: 90%;
+  }
+  #contentBox .container .contentsCards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  #contentBox .container .contentsCards .contentsCard {
+    width: 30%;
+  }
+  #ourLeadership {
+    width: 100%;
+  }
+  #ourLeadership .container {
+    width: 90%;
+  }
+  #ourLeadership .container .ourLeadershipText {
+    width: 60%;
+  }
+  #ourLeadership .container .ourLeadershipText h2 {
+    font-size: 64px;
+    font-weight: 500;
+  }
+  #ourLeadership .container .ourLeaderShipCards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+    gap: 20px;
+  }
+  #ourLeadership .container .ourLeaderShipCards .ourLeaderShipCard {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #ourLeadership .container .ourLeaderShipCards .ourLeaderShipCard .cardText {
+    width: 80%;
+  }
+  #ourLeadership .container .ourLeaderShipCards .ourLeaderShipCard .cardText p {
+    font-size: 16px;
+  }
+  #ourBlog {
+    width: 100%;
+  }
+  #ourBlog .container {
+    width: 80%;
+  }
+  #ourBlog .container .ourBlogText {
+    width: 70%;
+  }
+  #ourBlog .container .ourBlogText h2 {
+    font-size: 62px;
+  }
+  #ourBlog .container .ourBlogCards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+  #ourBlog .container .ourBlogCards .ourBlogCard {
+    width: 47%;
+  }
+  #ourBlog .container .ourBlogCards .ourBlogCard .cardImg {
+    width: 100%;
+  }
+  #ourBlog .container .ourBlogCards .ourBlogCard .cardImg img {
+    width: 100%;
+  }
+}
+#contentBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+#contentBox .container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 40px 0;
+  gap: 30px;
+}
+#contentBox .container h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(254, 147, 83);
+  border-bottom: 2px solid rgb(253, 95, 0);
+}
+#contentBox .container .contentsCards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+#contentBox .container .contentsCards .contentsCard {
+  background-color: rgba(85, 107, 47, 0.099);
+  border: 3px solid rgb(254, 147, 83);
+  border-radius: 5px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 5px;
+}
+#contentBox .container .contentsCards .contentsCard .cardImg {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contentBox .container .contentsCards .contentsCard .cardImg img {
+  width: 90%;
+  height: 250px;
+  border-radius: 3px;
+}
+#contentBox .container .contentsCards .contentsCard .cardText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  gap: 10px;
+}
+#contentBox .container .contentsCards .contentsCard .cardText h3 {
+  font-family: "Anton";
+  color: rgb(253, 95, 0);
+  font-size: 24px;
+  font-weight: 500;
+}
+#contentBox .container .contentsCards .contentsCard .cardText p {
+  color: rgb(147, 147, 147);
+  font-size: 18px;
+  font-weight: 400;
+}
+#contentBox .container .contentsCards .contentsCard .cardText span {
+  color: rgb(255, 98, 0);
+  font-size: 22px;
+  font-weight: 700;
+}
+#contentBox .container .contentsCards .contentsCard .cardText .btnBox {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#contentBox .container .contentsCards .contentsCard .cardText .btnBox button {
+  background-color: transparent;
+  border: 2px solid rgb(254, 147, 83);
+  border-radius: 3px;
+  color: rgb(253, 95, 0);
+  font-size: 18px;
+  font-weight: 400;
+  padding: 5px 10px;
+  transition: 1s;
+}
+#contentBox .container .contentsCards .contentsCard .cardText .btnBox button:hover {
+  transition: 1s;
+  cursor: pointer;
+  background-color: rgba(253, 97, 0, 0.162);
+}
+
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  #contentBox {
+    width: 100%;
+  }
+  #contentBox .container {
+    width: 90%;
+  }
+  #contentBox .container h2 {
+    font-size: 32px;
+  }
+  #contentBox .container .contentsCards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+  #contentBox .container .contentsCards .contentsCard {
+    width: 90%;
+  }
+  #contentBox .container .contentsCards .contentsCard .cardImg {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #contentBox .container .contentsCards .contentsCard .cardImg img {
+    width: 90%;
+    height: 250px;
+    border-radius: 3px;
+  }
+  #contentBox .container .contentsCards .contentsCard .cardText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    gap: 10px;
+  }
+  #contentBox .container .contentsCards .contentsCard .cardText h3 {
+    font-family: "Anton";
+    color: rgb(253, 95, 0);
+    font-size: 24px;
+    font-weight: 500;
+  }
+  #contentBox .container .contentsCards .contentsCard .cardText p {
+    color: rgb(147, 147, 147);
+    font-size: 18px;
+    font-weight: 400;
+  }
+  #contentBox .container .contentsCards .contentsCard .cardText span {
+    color: rgb(255, 98, 0);
+    font-size: 22px;
+    font-weight: 700;
+  }
+  #contentBox .container .contentsCards .contentsCard .cardText .btnBox {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+#contentBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+#contentBox .container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 40px 0;
+  gap: 30px;
+}
+#contentBox .container h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(254, 147, 83);
+  border-bottom: 2px solid rgb(253, 95, 0);
+}
+#contentBox .container .contentsCards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+#contentBox .container .contentsCards .contentsCard {
+  background-color: rgba(85, 107, 47, 0.099);
+  border: 3px solid rgb(254, 147, 83);
+  border-radius: 5px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 5px;
+}
+#contentBox .container .contentsCards .contentsCard .cardImg {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contentBox .container .contentsCards .contentsCard .cardImg img {
+  width: 90%;
+  height: 250px;
+  border-radius: 3px;
+}
+#contentBox .container .contentsCards .contentsCard .cardText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  gap: 10px;
+}
+#contentBox .container .contentsCards .contentsCard .cardText h3 {
+  font-family: "Anton";
+  color: rgb(253, 95, 0);
+  font-size: 24px;
+  font-weight: 500;
+}
+#contentBox .container .contentsCards .contentsCard .cardText p {
+  color: rgb(147, 147, 147);
+  font-size: 18px;
+  font-weight: 400;
+}
+#contentBox .container .contentsCards .contentsCard .cardText span {
+  color: rgb(255, 98, 0);
+  font-size: 22px;
+  font-weight: 700;
+}
+#contentBox .container .contentsCards .contentsCard .cardText .btnBox {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#contentBox .container .contentsCards .contentsCard .cardText .btnBox button {
+  background-color: transparent;
+  border: 2px solid rgb(254, 147, 83);
+  border-radius: 3px;
+  color: rgb(253, 95, 0);
+  font-size: 18px;
+  font-weight: 400;
+  padding: 5px 10px;
+  transition: 1s;
+}
+#contentBox .container .contentsCards .contentsCard .cardText .btnBox button:hover {
+  transition: 1s;
+  cursor: pointer;
+  background-color: rgba(253, 97, 0, 0.162);
 }
